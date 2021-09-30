@@ -13,28 +13,38 @@ namespace project
 {
     public partial class Form1 : Form
     {
-        //gv
+        //tax
         double taxRate = 0.13;
 
+        //prices
         double onePrice = 1.50;
         double twoPrice = 1.75;
         double thrPrice = 2.00;
         double whoPrice = 2.50;
         double skiPrice = 1.00;
 
+        //number of items ordered
         int onePercNum = 0;
         int twoPercNum = 0;
         int thrPercNum = 0;
         int whoPercNum = 0;
         int skiPercNum = 0;
+
+        //total cost of each item
         double taxTot = 0;
         double oneTot = 0;
         double twoTot = 0;
         double thrTot = 0;
         double whoTot = 0;
         double skiTot = 0;
+
+        //cash given
         double cashPaid = 0;
+
+        //cost without tax
         double totalCost = 0;
+
+        //cost with tax
         double GrandTot = 0;
 
         public Form1()
@@ -47,43 +57,50 @@ namespace project
         {
             try
             {
-                //get inputs
+                //cash register sound
                 SoundPlayer alertplayer = new SoundPlayer(Properties.Resources.mny1);
                 alertplayer.Play();
 
 
-
+                //getting inputs ammounts of items
                 onePercNum = Convert.ToInt32(OnePerInput.Text);
                 twoPercNum = Convert.ToInt32(twoPerInput.Text);
                 thrPercNum = Convert.ToInt32(ThreePerInput.Text);
                 whoPercNum = Convert.ToInt32(wholeMilkInput.Text);
                 skiPercNum = Convert.ToInt32(fakeLoserMilkInput.Text);
 
+                //total cost of each item without tax
                 oneTot = onePrice * onePercNum;
                 twoTot = twoPrice * twoPercNum;
                 thrTot = thrPrice * thrPercNum;
                 whoTot = whoPrice * whoPercNum;
                 skiTot = skiPrice * skiPercNum;
 
-
-
+                //cost calculations
                 totalCost = oneTot + twoTot + thrTot + skiTot + whoTot;
-                Cost.Text = $"{totalCost:C}";
                 taxTot = totalCost * taxRate;
                 GrandTot = taxTot + totalCost;
-                taxAmount.Text = $"{taxTot:C}";
+
+                //displaying cost 
+                Cost.Text = $"{totalCost:C}";
                 total.Text = $"{GrandTot:C}";
+                taxAmount.Text = $"{taxTot:C}";
+                
 
 
             }
             catch {
+
+                //error alert for checkout
                 errorMessage.Visible = true;
                 errorMessage.BringToFront();
+
                 refreshButton.Visible = true;
                 refreshButton.BringToFront();
+
+                //error sound
                 SoundPlayer errorSound = new SoundPlayer(Properties.Resources.sound103);
                 errorSound.Play();
-
 
             }
         }
@@ -92,21 +109,25 @@ namespace project
         {
             try
             {
-
-
+                //print receipt
                 printRe.Visible = true;
+                 button1.Visible = false;
+                
+                //cash given 
                 cashPaid = Convert.ToDouble(cashInput.Text);
-                amoPaid.Text = $"{cashPaid:C}";
                 change.Text = $"{cashPaid - GrandTot:C}";
-                button1.Visible = false;
+                amoPaid.Text = $"{cashPaid:C}";
 
             }
             catch
             {
+                //error alert for pay button
                 errorMessage.Visible = true;
                 errorMessage.BringToFront();
                 refreshButton.Visible = true;
                 refreshButton.BringToFront();
+
+                //error sound
                 SoundPlayer errorSound = new SoundPlayer(Properties.Resources.sound103);
                 errorSound.Play();
             }
@@ -115,6 +136,7 @@ namespace project
 
             private void refreshButton_Click(object sender, EventArgs e)
             {
+                //full reset of variables
                 OnePerInput.Text = "0";
                 twoPerInput.Text = "0";
                 ThreePerInput.Text = "0";
@@ -139,15 +161,20 @@ namespace project
                 total.Text = "xx";
                 change.Text = "xx";
 
+                //wait to build suspence
                 Refresh();
                 Thread.Sleep(1500);
 
+                //getting rid of alert
                 refreshButton.Visible = false;
                 errorMessage.Visible = false;
             }
 
             private void printRe_Click(object sender, EventArgs e)
             {
+
+            //making receipt visible
+                label2.Visible = true;
                 oneLab.Visible = true;
                 twoLab.Visible = true;
                 ThrLab.Visible = true;
@@ -170,6 +197,7 @@ namespace project
                 changeLab.Visible = true;
                 changeCost.Visible = true;
 
+                // displaying costs and cash paid
                 oneCost.Text = $"{oneTot:C}";
                 twoCost.Text = $"{twoTot:C}";
                 threeCost.Text = $"{thrTot:C}";

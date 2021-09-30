@@ -228,6 +228,7 @@ namespace project
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(180, 205);
             this.label2.TabIndex = 18;
+            this.label2.Visible = false;
             // 
             // oneLab
             // 
