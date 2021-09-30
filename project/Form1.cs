@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
-
+using System.Threading;
 namespace project
 {
     public partial class Form1 : Form
@@ -33,9 +33,8 @@ namespace project
         double thrTot = 0;
         double whoTot = 0;
         double skiTot = 0;
-        double cashPaid = 0;    
+        double cashPaid = 0;
         double totalCost = 0;
-        double taxCost = 0;
         double GrandTot = 0;
 
         public Form1()
@@ -66,101 +65,123 @@ namespace project
                 whoTot = whoPrice * whoPercNum;
                 skiTot = skiPrice * skiPercNum;
 
-                
-                
+
+
                 totalCost = oneTot + twoTot + thrTot + skiTot + whoTot;
                 Cost.Text = $"{totalCost:C}";
                 taxTot = totalCost * taxRate;
                 GrandTot = taxTot + totalCost;
                 taxAmount.Text = $"{taxTot:C}";
                 total.Text = $"{GrandTot:C}";
-               
+
 
             }
-            catch { 
-                errorMessage.Visible = true;   
+            catch {
+                errorMessage.Visible = true;
+                errorMessage.BringToFront();
                 refreshButton.Visible = true;
                 refreshButton.BringToFront();
                 SoundPlayer errorSound = new SoundPlayer(Properties.Resources.sound103);
                 errorSound.Play();
-            
-            
+
+
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
 
 
-            printRe.Visible = true;
-            cashPaid = Convert.ToDouble(cashInput.Text);
-            amoPaid.Text = $"{cashPaid:C}";
-            change.Text = $"{cashPaid - GrandTot:C}";
+                printRe.Visible = true;
+                cashPaid = Convert.ToDouble(cashInput.Text);
+                amoPaid.Text = $"{cashPaid:C}";
+                change.Text = $"{cashPaid - GrandTot:C}";
+                button1.Visible = false;
 
-        }
-
-        private void refreshButton_Click(object sender, EventArgs e)
-        {
-            OnePerInput.Text = "0";
-            twoPerInput.Text = "0";
-            ThreePerInput.Text = "0";   
-            fakeLoserMilkInput.Text = "0";  
-            wholeMilkInput.Text = "0";
-            onePercNum = 0;
-            twoPercNum = 0;
-            thrPercNum = 0;
-            whoPercNum = 0;
-            skiPercNum = 0;
-            taxTot = 0;
-
-
-
-
-
-
-
-
-
-
-            Refresh();
-        }
-
-        private void printRe_Click(object sender, EventArgs e)
-        {
-            oneLab.Visible = true;
-            twoLab.Visible = true;
-            ThrLab.Visible = true; 
-            whoLab.Visible = true;  
-            skimLab.Visible = true;
-            oneCost.Visible= true;
-            twoCost.Visible = true;
-            threeCost.Visible = true;
-            wholeCost.Visible = true;
-            skimCost.Visible = true;
-            subtotalLab.Visible = true;
-            taxLab.Visible = true;
-            totalab.Visible = true;
-            change.Visible = true;  
-            cashCost.Visible = true;
-            subtotCost.Visible = true;
-            totalCo.Visible = true; 
-            taxCo.Visible = true;
-            cashCo.Visible = true;
-            changeLab.Visible = true;
-            changeCost.Visible = true;
-
-            oneCost.Text = $"{oneTot:C}";
-            twoCost.Text = $"{twoTot:C}";
-            threeCost.Text = $"{thrTot:C}";
-            wholeCost.Text = $"{whoTot:C}";
-            skimCost.Text = $"{skiTot:C}";
-            totalCo.Text = $"{GrandTot:C}";
-            taxCo.Text = $"{taxTot:C}";
-            subtotCost.Text = $"{totalCost:C}";
-            cashCo.Text = $"{cashPaid:C}";
-            changeCost.Text = $"{cashPaid - GrandTot:C}";
+            }
+            catch
+            {
+                errorMessage.Visible = true;
+                errorMessage.BringToFront();
+                refreshButton.Visible = true;
+                refreshButton.BringToFront();
+                SoundPlayer errorSound = new SoundPlayer(Properties.Resources.sound103);
+                errorSound.Play();
+            }
 
         }
 
-    }
+            private void refreshButton_Click(object sender, EventArgs e)
+            {
+                OnePerInput.Text = "0";
+                twoPerInput.Text = "0";
+                ThreePerInput.Text = "0";
+                fakeLoserMilkInput.Text = "0";
+                wholeMilkInput.Text = "0";
+                onePercNum = 0;
+                twoPercNum = 0;
+                thrPercNum = 0;
+                whoPercNum = 0;
+                skiPercNum = 0;
+                taxTot = 0;
+                oneTot = 0;
+                twoTot = 0;
+                whoTot = 0;
+                skiTot = 0;
+                cashPaid = 0;
+                totalCost = 0;
+                GrandTot = 0;
+                taxAmount.Text = "xx";
+                amoPaid.Text = "xx";
+                Cost.Text = "xx";
+                total.Text = "xx";
+                change.Text = "xx";
+
+                Refresh();
+                Thread.Sleep(1500);
+
+                refreshButton.Visible = false;
+                errorMessage.Visible = false;
+            }
+
+            private void printRe_Click(object sender, EventArgs e)
+            {
+                oneLab.Visible = true;
+                twoLab.Visible = true;
+                ThrLab.Visible = true;
+                whoLab.Visible = true;
+                skimLab.Visible = true;
+                oneCost.Visible = true;
+                twoCost.Visible = true;
+                threeCost.Visible = true;
+                wholeCost.Visible = true;
+                skimCost.Visible = true;
+                subtotalLab.Visible = true;
+                taxLab.Visible = true;
+                totalab.Visible = true;
+                change.Visible = true;
+                cashCost.Visible = true;
+                subtotCost.Visible = true;
+                totalCo.Visible = true;
+                taxCo.Visible = true;
+                cashCo.Visible = true;
+                changeLab.Visible = true;
+                changeCost.Visible = true;
+
+                oneCost.Text = $"{oneTot:C}";
+                twoCost.Text = $"{twoTot:C}";
+                threeCost.Text = $"{thrTot:C}";
+                wholeCost.Text = $"{whoTot:C}";
+                skimCost.Text = $"{skiTot:C}";
+                totalCo.Text = $"{GrandTot:C}";
+                taxCo.Text = $"{taxTot:C}";
+                subtotCost.Text = $"{totalCost:C}";
+                cashCo.Text = $"{cashPaid:C}";
+                changeCost.Text = $"{cashPaid - GrandTot:C}";
+
+            }
+
+        }
     } 

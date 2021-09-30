@@ -224,9 +224,9 @@ namespace project
             // label2
             // 
             this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(182, 70);
+            this.label2.Location = new System.Drawing.Point(194, 70);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(180, 174);
+            this.label2.Size = new System.Drawing.Size(180, 205);
             this.label2.TabIndex = 18;
             // 
             // oneLab
@@ -234,7 +234,7 @@ namespace project
             this.oneLab.AutoSize = true;
             this.oneLab.BackColor = System.Drawing.Color.Transparent;
             this.oneLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.oneLab.Location = new System.Drawing.Point(194, 70);
+            this.oneLab.Location = new System.Drawing.Point(200, 70);
             this.oneLab.Name = "oneLab";
             this.oneLab.Size = new System.Drawing.Size(26, 16);
             this.oneLab.TabIndex = 19;
@@ -246,7 +246,7 @@ namespace project
             this.twoLab.AutoSize = true;
             this.twoLab.BackColor = System.Drawing.Color.Transparent;
             this.twoLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.twoLab.Location = new System.Drawing.Point(194, 86);
+            this.twoLab.Location = new System.Drawing.Point(200, 86);
             this.twoLab.Name = "twoLab";
             this.twoLab.Size = new System.Drawing.Size(26, 16);
             this.twoLab.TabIndex = 20;
@@ -258,7 +258,7 @@ namespace project
             this.ThrLab.AutoSize = true;
             this.ThrLab.BackColor = System.Drawing.Color.Transparent;
             this.ThrLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThrLab.Location = new System.Drawing.Point(194, 102);
+            this.ThrLab.Location = new System.Drawing.Point(200, 101);
             this.ThrLab.Name = "ThrLab";
             this.ThrLab.Size = new System.Drawing.Size(26, 16);
             this.ThrLab.TabIndex = 21;
@@ -270,7 +270,7 @@ namespace project
             this.whoLab.AutoSize = true;
             this.whoLab.BackColor = System.Drawing.Color.Transparent;
             this.whoLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.whoLab.Location = new System.Drawing.Point(191, 118);
+            this.whoLab.Location = new System.Drawing.Point(200, 118);
             this.whoLab.Name = "whoLab";
             this.whoLab.Size = new System.Drawing.Size(42, 16);
             this.whoLab.TabIndex = 22;
@@ -282,7 +282,7 @@ namespace project
             this.skimLab.AutoSize = true;
             this.skimLab.BackColor = System.Drawing.Color.Transparent;
             this.skimLab.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.skimLab.Location = new System.Drawing.Point(191, 134);
+            this.skimLab.Location = new System.Drawing.Point(200, 134);
             this.skimLab.Name = "skimLab";
             this.skimLab.Size = new System.Drawing.Size(35, 16);
             this.skimLab.TabIndex = 23;
@@ -294,60 +294,65 @@ namespace project
             this.twoPerN.AutoSize = true;
             this.twoPerN.BackColor = System.Drawing.Color.Transparent;
             this.twoPerN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.twoPerN.Location = new System.Drawing.Point(226, 86);
+            this.twoPerN.Location = new System.Drawing.Point(241, 86);
             this.twoPerN.Name = "twoPerN";
             this.twoPerN.Size = new System.Drawing.Size(19, 16);
             this.twoPerN.TabIndex = 24;
             this.twoPerN.Text = "xx";
+            this.twoPerN.Visible = false;
             // 
             // threePerN
             // 
             this.threePerN.AutoSize = true;
             this.threePerN.BackColor = System.Drawing.Color.Transparent;
             this.threePerN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.threePerN.Location = new System.Drawing.Point(226, 102);
+            this.threePerN.Location = new System.Drawing.Point(241, 101);
             this.threePerN.Name = "threePerN";
             this.threePerN.Size = new System.Drawing.Size(19, 16);
             this.threePerN.TabIndex = 25;
             this.threePerN.Text = "xx";
+            this.threePerN.Visible = false;
             // 
             // skimN
             // 
             this.skimN.AutoSize = true;
             this.skimN.BackColor = System.Drawing.Color.Transparent;
             this.skimN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.skimN.Location = new System.Drawing.Point(226, 134);
+            this.skimN.Location = new System.Drawing.Point(241, 134);
             this.skimN.Name = "skimN";
             this.skimN.Size = new System.Drawing.Size(19, 16);
             this.skimN.TabIndex = 27;
             this.skimN.Text = "xx";
+            this.skimN.Visible = false;
             // 
             // wholeN
             // 
             this.wholeN.AutoSize = true;
             this.wholeN.BackColor = System.Drawing.Color.Transparent;
             this.wholeN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wholeN.Location = new System.Drawing.Point(232, 119);
+            this.wholeN.Location = new System.Drawing.Point(241, 119);
             this.wholeN.Name = "wholeN";
             this.wholeN.Size = new System.Drawing.Size(19, 16);
             this.wholeN.TabIndex = 26;
             this.wholeN.Text = "xx";
+            this.wholeN.Visible = false;
             // 
             // onePerN
             // 
             this.onePerN.AutoSize = true;
             this.onePerN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.onePerN.Location = new System.Drawing.Point(226, 70);
+            this.onePerN.Location = new System.Drawing.Point(241, 70);
             this.onePerN.Name = "onePerN";
             this.onePerN.Size = new System.Drawing.Size(19, 16);
             this.onePerN.TabIndex = 28;
             this.onePerN.Text = "xx";
+            this.onePerN.Visible = false;
             // 
             // oneCost
             // 
             this.oneCost.AutoSize = true;
             this.oneCost.BackColor = System.Drawing.Color.Transparent;
-            this.oneCost.Location = new System.Drawing.Point(327, 72);
+            this.oneCost.Location = new System.Drawing.Point(346, 70);
             this.oneCost.Name = "oneCost";
             this.oneCost.Size = new System.Drawing.Size(17, 13);
             this.oneCost.TabIndex = 29;
@@ -358,7 +363,7 @@ namespace project
             // 
             this.twoCost.AutoSize = true;
             this.twoCost.BackColor = System.Drawing.Color.Transparent;
-            this.twoCost.Location = new System.Drawing.Point(327, 88);
+            this.twoCost.Location = new System.Drawing.Point(346, 88);
             this.twoCost.Name = "twoCost";
             this.twoCost.Size = new System.Drawing.Size(17, 13);
             this.twoCost.TabIndex = 30;
@@ -369,7 +374,7 @@ namespace project
             // 
             this.wholeCost.AutoSize = true;
             this.wholeCost.BackColor = System.Drawing.Color.Transparent;
-            this.wholeCost.Location = new System.Drawing.Point(327, 120);
+            this.wholeCost.Location = new System.Drawing.Point(346, 121);
             this.wholeCost.Name = "wholeCost";
             this.wholeCost.Size = new System.Drawing.Size(17, 13);
             this.wholeCost.TabIndex = 32;
@@ -380,7 +385,7 @@ namespace project
             // 
             this.threeCost.AutoSize = true;
             this.threeCost.BackColor = System.Drawing.Color.Transparent;
-            this.threeCost.Location = new System.Drawing.Point(327, 104);
+            this.threeCost.Location = new System.Drawing.Point(346, 104);
             this.threeCost.Name = "threeCost";
             this.threeCost.Size = new System.Drawing.Size(17, 13);
             this.threeCost.TabIndex = 31;
@@ -391,7 +396,7 @@ namespace project
             // 
             this.skimCost.AutoSize = true;
             this.skimCost.BackColor = System.Drawing.Color.Transparent;
-            this.skimCost.Location = new System.Drawing.Point(327, 136);
+            this.skimCost.Location = new System.Drawing.Point(346, 137);
             this.skimCost.Name = "skimCost";
             this.skimCost.Size = new System.Drawing.Size(17, 13);
             this.skimCost.TabIndex = 33;
@@ -470,7 +475,7 @@ namespace project
             // 
             this.amoPaid.AutoSize = true;
             this.amoPaid.BackColor = System.Drawing.Color.Transparent;
-            this.amoPaid.Location = new System.Drawing.Point(159, 249);
+            this.amoPaid.Location = new System.Drawing.Point(148, 249);
             this.amoPaid.Name = "amoPaid";
             this.amoPaid.Size = new System.Drawing.Size(17, 13);
             this.amoPaid.TabIndex = 41;
@@ -480,7 +485,7 @@ namespace project
             // 
             this.Cost.AutoSize = true;
             this.Cost.BackColor = System.Drawing.Color.Transparent;
-            this.Cost.Location = new System.Drawing.Point(159, 262);
+            this.Cost.Location = new System.Drawing.Point(148, 262);
             this.Cost.Name = "Cost";
             this.Cost.Size = new System.Drawing.Size(17, 13);
             this.Cost.TabIndex = 42;
@@ -490,7 +495,7 @@ namespace project
             // 
             this.taxAmount.AutoSize = true;
             this.taxAmount.BackColor = System.Drawing.Color.Transparent;
-            this.taxAmount.Location = new System.Drawing.Point(159, 284);
+            this.taxAmount.Location = new System.Drawing.Point(148, 284);
             this.taxAmount.Name = "taxAmount";
             this.taxAmount.Size = new System.Drawing.Size(17, 13);
             this.taxAmount.TabIndex = 43;
@@ -500,7 +505,7 @@ namespace project
             // 
             this.total.AutoSize = true;
             this.total.BackColor = System.Drawing.Color.Transparent;
-            this.total.Location = new System.Drawing.Point(159, 307);
+            this.total.Location = new System.Drawing.Point(148, 307);
             this.total.Name = "total";
             this.total.Size = new System.Drawing.Size(17, 13);
             this.total.TabIndex = 44;
@@ -510,7 +515,7 @@ namespace project
             // 
             this.change.AutoSize = true;
             this.change.BackColor = System.Drawing.Color.Transparent;
-            this.change.Location = new System.Drawing.Point(159, 320);
+            this.change.Location = new System.Drawing.Point(148, 320);
             this.change.Name = "change";
             this.change.Size = new System.Drawing.Size(17, 13);
             this.change.TabIndex = 45;
@@ -529,9 +534,9 @@ namespace project
             // errorMessage
             // 
             this.errorMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.errorMessage.Location = new System.Drawing.Point(248, 228);
+            this.errorMessage.Location = new System.Drawing.Point(256, 249);
             this.errorMessage.Name = "errorMessage";
-            this.errorMessage.Size = new System.Drawing.Size(399, 347);
+            this.errorMessage.Size = new System.Drawing.Size(402, 350);
             this.errorMessage.TabIndex = 47;
             this.errorMessage.Text = "Something went wrong please try again";
             this.errorMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -539,7 +544,7 @@ namespace project
             // 
             // refreshButton
             // 
-            this.refreshButton.Location = new System.Drawing.Point(269, 231);
+            this.refreshButton.Location = new System.Drawing.Point(158, 196);
             this.refreshButton.Name = "refreshButton";
             this.refreshButton.Size = new System.Drawing.Size(75, 23);
             this.refreshButton.TabIndex = 48;
@@ -550,7 +555,7 @@ namespace project
             // 
             // printRe
             // 
-            this.printRe.Location = new System.Drawing.Point(81, 310);
+            this.printRe.Location = new System.Drawing.Point(63, 310);
             this.printRe.Name = "printRe";
             this.printRe.Size = new System.Drawing.Size(75, 23);
             this.printRe.TabIndex = 49;
@@ -562,7 +567,7 @@ namespace project
             // taxLab
             // 
             this.taxLab.AutoSize = true;
-            this.taxLab.Location = new System.Drawing.Point(191, 173);
+            this.taxLab.Location = new System.Drawing.Point(200, 173);
             this.taxLab.Name = "taxLab";
             this.taxLab.Size = new System.Drawing.Size(21, 13);
             this.taxLab.TabIndex = 50;
@@ -572,7 +577,7 @@ namespace project
             // subtotCost
             // 
             this.subtotCost.AutoSize = true;
-            this.subtotCost.Location = new System.Drawing.Point(327, 154);
+            this.subtotCost.Location = new System.Drawing.Point(346, 154);
             this.subtotCost.Name = "subtotCost";
             this.subtotCost.Size = new System.Drawing.Size(17, 13);
             this.subtotCost.TabIndex = 51;
@@ -582,7 +587,7 @@ namespace project
             // totalab
             // 
             this.totalab.AutoSize = true;
-            this.totalab.Location = new System.Drawing.Point(191, 186);
+            this.totalab.Location = new System.Drawing.Point(200, 186);
             this.totalab.Name = "totalab";
             this.totalab.Size = new System.Drawing.Size(27, 13);
             this.totalab.TabIndex = 52;
@@ -592,7 +597,7 @@ namespace project
             // totalCo
             // 
             this.totalCo.AutoSize = true;
-            this.totalCo.Location = new System.Drawing.Point(327, 186);
+            this.totalCo.Location = new System.Drawing.Point(346, 186);
             this.totalCo.Name = "totalCo";
             this.totalCo.Size = new System.Drawing.Size(17, 13);
             this.totalCo.TabIndex = 53;
@@ -602,7 +607,7 @@ namespace project
             // subtotalLab
             // 
             this.subtotalLab.AutoSize = true;
-            this.subtotalLab.Location = new System.Drawing.Point(191, 154);
+            this.subtotalLab.Location = new System.Drawing.Point(200, 154);
             this.subtotalLab.Name = "subtotalLab";
             this.subtotalLab.Size = new System.Drawing.Size(44, 13);
             this.subtotalLab.TabIndex = 54;
@@ -612,7 +617,7 @@ namespace project
             // taxCo
             // 
             this.taxCo.AutoSize = true;
-            this.taxCo.Location = new System.Drawing.Point(327, 173);
+            this.taxCo.Location = new System.Drawing.Point(346, 173);
             this.taxCo.Name = "taxCo";
             this.taxCo.Size = new System.Drawing.Size(17, 13);
             this.taxCo.TabIndex = 55;
@@ -622,7 +627,7 @@ namespace project
             // cashCost
             // 
             this.cashCost.AutoSize = true;
-            this.cashCost.Location = new System.Drawing.Point(191, 201);
+            this.cashCost.Location = new System.Drawing.Point(200, 201);
             this.cashCost.Name = "cashCost";
             this.cashCost.Size = new System.Drawing.Size(30, 13);
             this.cashCost.TabIndex = 56;
@@ -632,7 +637,7 @@ namespace project
             // cashCo
             // 
             this.cashCo.AutoSize = true;
-            this.cashCo.Location = new System.Drawing.Point(327, 201);
+            this.cashCo.Location = new System.Drawing.Point(346, 201);
             this.cashCo.Name = "cashCo";
             this.cashCo.Size = new System.Drawing.Size(17, 13);
             this.cashCo.TabIndex = 57;
@@ -642,7 +647,7 @@ namespace project
             // changeLab
             // 
             this.changeLab.AutoSize = true;
-            this.changeLab.Location = new System.Drawing.Point(191, 214);
+            this.changeLab.Location = new System.Drawing.Point(200, 214);
             this.changeLab.Name = "changeLab";
             this.changeLab.Size = new System.Drawing.Size(43, 13);
             this.changeLab.TabIndex = 58;
@@ -652,7 +657,7 @@ namespace project
             // changeCost
             // 
             this.changeCost.AutoSize = true;
-            this.changeCost.Location = new System.Drawing.Point(327, 214);
+            this.changeCost.Location = new System.Drawing.Point(346, 214);
             this.changeCost.Name = "changeCost";
             this.changeCost.Size = new System.Drawing.Size(17, 13);
             this.changeCost.TabIndex = 59;
