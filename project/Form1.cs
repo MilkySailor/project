@@ -172,6 +172,7 @@ namespace project
 
             private void printRe_Click(object sender, EventArgs e)
             {
+            //will make a slow reveil later
 
             //making receipt visible
                 label2.Visible = true;
