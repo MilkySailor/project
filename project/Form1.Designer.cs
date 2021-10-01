@@ -104,7 +104,7 @@ namespace project
             // twoPerInput
             // 
             this.twoPerInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.twoPerInput.Location = new System.Drawing.Point(119, 78);
+            this.twoPerInput.Location = new System.Drawing.Point(119, 82);
             this.twoPerInput.Name = "twoPerInput";
             this.twoPerInput.Size = new System.Drawing.Size(26, 24);
             this.twoPerInput.TabIndex = 1;
@@ -133,7 +133,7 @@ namespace project
             // 
             this.wholeMilk.AutoSize = true;
             this.wholeMilk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wholeMilk.Location = new System.Drawing.Point(2, 143);
+            this.wholeMilk.Location = new System.Drawing.Point(3, 143);
             this.wholeMilk.Name = "wholeMilk";
             this.wholeMilk.Size = new System.Drawing.Size(85, 20);
             this.wholeMilk.TabIndex = 4;
@@ -142,7 +142,7 @@ namespace project
             // wholeMilkInput
             // 
             this.wholeMilkInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wholeMilkInput.Location = new System.Drawing.Point(120, 143);
+            this.wholeMilkInput.Location = new System.Drawing.Point(120, 142);
             this.wholeMilkInput.Name = "wholeMilkInput";
             this.wholeMilkInput.Size = new System.Drawing.Size(25, 24);
             this.wholeMilkInput.TabIndex = 5;
@@ -170,7 +170,7 @@ namespace project
             // ThreePerInput
             // 
             this.ThreePerInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThreePerInput.Location = new System.Drawing.Point(119, 113);
+            this.ThreePerInput.Location = new System.Drawing.Point(119, 112);
             this.ThreePerInput.Name = "ThreePerInput";
             this.ThreePerInput.Size = new System.Drawing.Size(26, 24);
             this.ThreePerInput.TabIndex = 9;
@@ -541,7 +541,7 @@ namespace project
             // errorMessage
             // 
             this.errorMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.errorMessage.Location = new System.Drawing.Point(-10, 1);
+            this.errorMessage.Location = new System.Drawing.Point(171, 298);
             this.errorMessage.Name = "errorMessage";
             this.errorMessage.Size = new System.Drawing.Size(402, 350);
             this.errorMessage.TabIndex = 47;
