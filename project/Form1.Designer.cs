@@ -1,7 +1,7 @@
 ﻿
 namespace project
 {
-    partial class Form1
+    partial class milkShop
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace project
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(milkShop));
             this.OnePerLabel = new System.Windows.Forms.Label();
             this.twoPerInput = new System.Windows.Forms.TextBox();
             this.TwoPerLabel = new System.Windows.Forms.Label();
@@ -713,7 +713,7 @@ namespace project
             this.resetButton.UseVisualStyleBackColor = true;
             this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
-            // Form1
+            // milkShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -778,9 +778,9 @@ namespace project
             this.Controls.Add(this.twoPerInput);
             this.Controls.Add(this.OnePerLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "milkShop";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Milky\'s Milk Shop";
             this.ResumeLayout(false);
             this.PerformLayout();
 

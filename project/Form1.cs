@@ -11,7 +11,7 @@ using System.Media;
 using System.Threading;
 namespace project
 {
-    public partial class Form1 : Form
+    public partial class milkShop : Form
     {
         //tax
         double taxRate = 0.13;
@@ -47,7 +47,7 @@ namespace project
         //cost with tax
         double GrandTot = 0;
 
-        public Form1()
+        public milkShop()
         {
             InitializeComponent();
 
