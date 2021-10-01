@@ -72,7 +72,7 @@ namespace project
             this.taxAmount = new System.Windows.Forms.Label();
             this.total = new System.Windows.Forms.Label();
             this.change = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.payButton = new System.Windows.Forms.Button();
             this.errorMessage = new System.Windows.Forms.Label();
             this.refreshButton = new System.Windows.Forms.Button();
             this.printRe = new System.Windows.Forms.Button();
@@ -528,20 +528,20 @@ namespace project
             this.change.TabIndex = 45;
             this.change.Text = "xx";
             // 
-            // button1
+            // payButton
             // 
-            this.button1.Location = new System.Drawing.Point(194, 228);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(39, 20);
-            this.button1.TabIndex = 46;
-            this.button1.Text = "Pay";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.payButton.Location = new System.Drawing.Point(194, 228);
+            this.payButton.Name = "payButton";
+            this.payButton.Size = new System.Drawing.Size(39, 20);
+            this.payButton.TabIndex = 46;
+            this.payButton.Text = "Pay";
+            this.payButton.UseVisualStyleBackColor = true;
+            this.payButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // errorMessage
             // 
             this.errorMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.errorMessage.Location = new System.Drawing.Point(-11, -8);
+            this.errorMessage.Location = new System.Drawing.Point(-13, -6);
             this.errorMessage.Name = "errorMessage";
             this.errorMessage.Size = new System.Drawing.Size(402, 350);
             this.errorMessage.TabIndex = 47;
@@ -711,6 +711,7 @@ namespace project
             this.resetButton.TabIndex = 62;
             this.resetButton.Text = "reset";
             this.resetButton.UseVisualStyleBackColor = true;
+            this.resetButton.Visible = false;
             this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
             // milkShop
@@ -734,7 +735,7 @@ namespace project
             this.Controls.Add(this.printRe);
             this.Controls.Add(this.refreshButton);
             this.Controls.Add(this.errorMessage);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.payButton);
             this.Controls.Add(this.change);
             this.Controls.Add(this.total);
             this.Controls.Add(this.taxAmount);
@@ -830,7 +831,7 @@ namespace project
         private System.Windows.Forms.Label taxAmount;
         private System.Windows.Forms.Label total;
         private System.Windows.Forms.Label change;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button payButton;
         private System.Windows.Forms.Label errorMessage;
         private System.Windows.Forms.Button refreshButton;
         private System.Windows.Forms.Button printRe;

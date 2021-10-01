@@ -111,7 +111,7 @@ namespace project
 
                 //print receipt
                 printRe.Visible = true;
-                 button1.Visible = false;
+                 payButton.Visible = false;
                 
                 //cash given 
                 cashPaid = Convert.ToDouble(cashInput.Text);
@@ -369,8 +369,13 @@ namespace project
             subtotalLab.Visible = false;
             subtotCost.Visible = false;
 
+            noRe.Visible = false;
+            thank.Visible = false;
+            payButton.Visible = true;
+
             resetButton.Visible = false;
             label2.Visible = false;
+
         }
     }
     } 
