@@ -118,6 +118,23 @@ namespace project
                 change.Text = $"{cashPaid - GrandTot:C}";
                 amoPaid.Text = $"{cashPaid:C}";
 
+                //receipt printing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             }
             catch
             {
@@ -172,33 +189,10 @@ namespace project
 
             private void printRe_Click(object sender, EventArgs e)
             {
-            //will make a slow reveil later
+            SoundPlayer receiptPrint = new  SoundPlayer(Properties.Resources.kitchen_ticket_printer_sound);
+            receiptPrint.Play();
 
-            //making receipt visible
-                label2.Visible = true;
-                oneLab.Visible = true;
-                twoLab.Visible = true;
-                ThrLab.Visible = true;
-                whoLab.Visible = true;
-                skimLab.Visible = true;
-                oneCost.Visible = true;
-                twoCost.Visible = true;
-                threeCost.Visible = true;
-                wholeCost.Visible = true;
-                skimCost.Visible = true;
-                subtotalLab.Visible = true;
-                taxLab.Visible = true;
-                totalab.Visible = true;
-                change.Visible = true;
-                cashCost.Visible = true;
-                subtotCost.Visible = true;
-                totalCo.Visible = true;
-                taxCo.Visible = true;
-                cashCo.Visible = true;
-                changeLab.Visible = true;
-                changeCost.Visible = true;
-
-                // displaying costs and cash paid
+            //setting values
                 oneCost.Text = $"{oneTot:C}";
                 twoCost.Text = $"{twoTot:C}";
                 threeCost.Text = $"{thrTot:C}";
@@ -209,8 +203,87 @@ namespace project
                 subtotCost.Text = $"{totalCost:C}";
                 cashCo.Text = $"{cashPaid:C}";
                 changeCost.Text = $"{cashPaid - GrandTot:C}";
+                onePerN.Text = $"X {onePercNum}";
+            twoPerN.Text = $"X {twoPercNum}";
+            threePerN.Text = $"X {thrPercNum}";
+            wholeN.Text = $"X {whoPercNum}";
+            skimN.Text = $"X {skiPercNum}";
 
+
+
+            //making receipt visible
+                
+            oneCost.Visible = true;    
+            oneLab.Visible = true;
+            label2.Visible = true;
+            onePerN.Visible = true;
+            label2.SendToBack();
+
+            Refresh();
+            Thread.Sleep(500);
+
+            twoPerN.Visible = true;
+            twoLab.Visible = true;
+            twoCost.Visible = true;
+          
+            Refresh();
+            Thread.Sleep(500);
+
+            ThrLab.Visible = true;
+            threeCost.Visible = true;
+            threePerN.Visible = true;
+
+            Refresh();
+            Thread.Sleep(500);
+
+            whoLab.Visible = true;
+            wholeCost.Visible = true;
+            wholeN.Visible = true;  
+
+            Refresh();
+            Thread.Sleep(500);
+
+            skimLab.Visible = true;
+            skimCost.Visible = true;
+            skimN.Visible = true;
+
+            Refresh();
+            Thread.Sleep(500);
+            
+            subtotalLab.Visible = true;  
+            subtotCost.Visible = true;  
+               
+            Refresh();
+            Thread.Sleep(500);
+             
+            taxLab.Visible = true;   
+            taxCo.Visible = true;   
+                
+            Refresh();
+            Thread.Sleep(500);
+                
+            totalab.Visible = true;
+            totalCo.Visible = true;    
+
+            Refresh();
+            Thread.Sleep(500);
+
+            cashCost.Visible = true;
+            cashCo.Visible = true; 
+              
+            Refresh();
+            Thread.Sleep(500);
+
+            changeCost.Visible = true;
+            changeLab.Visible = true;
+
+            Refresh();
+            Thread.Sleep(500);
+
+            noRe.Visible = true;
+            thank.Visible = true;
+            refreshButton.Visible = true;  
             }
 
-        }
+    }
     } 

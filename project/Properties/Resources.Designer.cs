@@ -63,6 +63,25 @@ namespace project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream kitchen_ticket_printer_sound {
+            get {
+                return ResourceManager.GetStream("kitchen_ticket_printer_sound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon milk_box {
+            get {
+                object obj = ResourceManager.GetObject("milk_box", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream mny1 {
             get {
                 return ResourceManager.GetStream("mny1", resourceCulture);
