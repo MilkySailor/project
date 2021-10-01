@@ -49,6 +49,7 @@ namespace project
 
         public milkShop()
         {
+
             InitializeComponent();
 
         }
@@ -57,10 +58,10 @@ namespace project
         {
             try
             {
+
                 //cash register sound
                 SoundPlayer alertplayer = new SoundPlayer(Properties.Resources.mny1);
                 alertplayer.Play();
-
 
                 //getting inputs ammounts of items
                 onePercNum = Convert.ToInt32(OnePerInput.Text);
@@ -85,9 +86,7 @@ namespace project
                 Cost.Text = $"{totalCost:C}";
                 total.Text = $"{GrandTot:C}";
                 taxAmount.Text = $"{taxTot:C}";
-                
-
-
+               
             }
             catch {
 
@@ -109,6 +108,7 @@ namespace project
         {
             try
             {
+
                 //print receipt
                 printRe.Visible = true;
                  button1.Visible = false;
@@ -117,23 +117,6 @@ namespace project
                 cashPaid = Convert.ToDouble(cashInput.Text);
                 change.Text = $"{cashPaid - GrandTot:C}";
                 amoPaid.Text = $"{cashPaid:C}";
-
-                //receipt printing
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             }
             catch
@@ -309,7 +292,7 @@ namespace project
         private void resetButton_Click(object sender, EventArgs e)
         {
 
-
+            //reseting values
             OnePerInput.Text = "0";
             twoPerInput.Text = "0";
             ThreePerInput.Text = "0";

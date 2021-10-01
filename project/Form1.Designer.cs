@@ -541,7 +541,7 @@ namespace project
             // errorMessage
             // 
             this.errorMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.errorMessage.Location = new System.Drawing.Point(171, 298);
+            this.errorMessage.Location = new System.Drawing.Point(-11, -8);
             this.errorMessage.Name = "errorMessage";
             this.errorMessage.Size = new System.Drawing.Size(402, 350);
             this.errorMessage.TabIndex = 47;
