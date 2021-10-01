@@ -88,6 +88,7 @@ namespace project
             this.changeCost = new System.Windows.Forms.Label();
             this.noRe = new System.Windows.Forms.Label();
             this.thank = new System.Windows.Forms.Label();
+            this.resetButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // OnePerLabel
@@ -540,7 +541,7 @@ namespace project
             // errorMessage
             // 
             this.errorMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.errorMessage.Location = new System.Drawing.Point(-11, -8);
+            this.errorMessage.Location = new System.Drawing.Point(-10, 1);
             this.errorMessage.Name = "errorMessage";
             this.errorMessage.Size = new System.Drawing.Size(402, 350);
             this.errorMessage.TabIndex = 47;
@@ -550,7 +551,7 @@ namespace project
             // 
             // refreshButton
             // 
-            this.refreshButton.Location = new System.Drawing.Point(120, 204);
+            this.refreshButton.Location = new System.Drawing.Point(151, 196);
             this.refreshButton.Name = "refreshButton";
             this.refreshButton.Size = new System.Drawing.Size(75, 23);
             this.refreshButton.TabIndex = 48;
@@ -702,11 +703,22 @@ namespace project
             this.thank.Text = "******THANK YOU******";
             this.thank.Visible = false;
             // 
+            // resetButton
+            // 
+            this.resetButton.Location = new System.Drawing.Point(244, 284);
+            this.resetButton.Name = "resetButton";
+            this.resetButton.Size = new System.Drawing.Size(75, 23);
+            this.resetButton.TabIndex = 62;
+            this.resetButton.Text = "reset";
+            this.resetButton.UseVisualStyleBackColor = true;
+            this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(381, 342);
+            this.Controls.Add(this.resetButton);
             this.Controls.Add(this.thank);
             this.Controls.Add(this.noRe);
             this.Controls.Add(this.changeCost);
@@ -834,6 +846,7 @@ namespace project
         private System.Windows.Forms.Label changeCost;
         private System.Windows.Forms.Label noRe;
         private System.Windows.Forms.Label thank;
+        private System.Windows.Forms.Button resetButton;
     }
 }
 

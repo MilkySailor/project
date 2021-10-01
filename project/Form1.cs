@@ -177,6 +177,7 @@ namespace project
                 Cost.Text = "xx";
                 total.Text = "xx";
                 change.Text = "xx";
+                cashInput.Text = "0";
 
                 //wait to build suspence
                 Refresh();
@@ -193,59 +194,74 @@ namespace project
             receiptPrint.Play();
 
             //setting values
-                oneCost.Text = $"{oneTot:C}";
-                twoCost.Text = $"{twoTot:C}";
-                threeCost.Text = $"{thrTot:C}";
-                wholeCost.Text = $"{whoTot:C}";
-                skimCost.Text = $"{skiTot:C}";
-                totalCo.Text = $"{GrandTot:C}";
-                taxCo.Text = $"{taxTot:C}";
-                subtotCost.Text = $"{totalCost:C}";
-                cashCo.Text = $"{cashPaid:C}";
-                changeCost.Text = $"{cashPaid - GrandTot:C}";
-                onePerN.Text = $"X {onePercNum}";
+
+            oneCost.Text = $"{oneTot:C}";
+            twoCost.Text = $"{twoTot:C}";
+            threeCost.Text = $"{thrTot:C}";
+            wholeCost.Text = $"{whoTot:C}";
+            skimCost.Text = $"{skiTot:C}";
+            totalCo.Text = $"{GrandTot:C}";
+            taxCo.Text = $"{taxTot:C}";
+            subtotCost.Text = $"{totalCost:C}";
+            cashCo.Text = $"{cashPaid:C}";
+            changeCost.Text = $"{cashPaid - GrandTot:C}";
+            onePerN.Text = $"X {onePercNum}";
             twoPerN.Text = $"X {twoPercNum}";
             threePerN.Text = $"X {thrPercNum}";
             wholeN.Text = $"X {whoPercNum}";
             skimN.Text = $"X {skiPercNum}";
 
-
-
             //making receipt visible
-                
-            oneCost.Visible = true;    
-            oneLab.Visible = true;
+
+            if (onePercNum > 0)
+            {
+             oneCost.Visible = true; 
+             oneLab.Visible = true;
+             onePerN.Visible = true;
+            }    
+
             label2.Visible = true;
-            onePerN.Visible = true;
             label2.SendToBack();
 
             Refresh();
             Thread.Sleep(500);
 
-            twoPerN.Visible = true;
-            twoLab.Visible = true;
-            twoCost.Visible = true;
-          
-            Refresh();
-            Thread.Sleep(500);
-
-            ThrLab.Visible = true;
-            threeCost.Visible = true;
-            threePerN.Visible = true;
+            if (twoPercNum > 0)
+            {
+                twoPerN.Visible = true;
+                twoLab.Visible = true;
+                twoCost.Visible = true;
+            }
 
             Refresh();
             Thread.Sleep(500);
 
-            whoLab.Visible = true;
-            wholeCost.Visible = true;
-            wholeN.Visible = true;  
+            if (thrPercNum > 0)
+            {
+                ThrLab.Visible = true;
+                threeCost.Visible = true;
+                threePerN.Visible = true;
+            }
 
             Refresh();
             Thread.Sleep(500);
 
-            skimLab.Visible = true;
-            skimCost.Visible = true;
-            skimN.Visible = true;
+            if (whoPercNum > 0)
+            {
+                whoLab.Visible = true;
+                wholeCost.Visible = true;
+                wholeN.Visible = true;
+            }
+
+            Refresh();
+            Thread.Sleep(500);
+
+            if (skiPercNum > 0)
+            {
+                skimLab.Visible = true;
+                skimCost.Visible = true;
+                skimN.Visible = true;
+            }
 
             Refresh();
             Thread.Sleep(500);
@@ -282,8 +298,96 @@ namespace project
 
             noRe.Visible = true;
             thank.Visible = true;
-            refreshButton.Visible = true;  
+            
+            Refresh();
+            Thread.Sleep(250);
+
+            resetButton.Visible = true;
+           
             }
 
+        private void resetButton_Click(object sender, EventArgs e)
+        {
+
+
+            OnePerInput.Text = "0";
+            twoPerInput.Text = "0";
+            ThreePerInput.Text = "0";
+            fakeLoserMilkInput.Text = "0";
+            wholeMilkInput.Text = "0";
+            onePercNum = 0;
+            twoPercNum = 0;
+            thrPercNum = 0;
+            whoPercNum = 0;
+            skiPercNum = 0;
+            taxTot = 0;
+            oneTot = 0;
+            twoTot = 0;
+            whoTot = 0;
+            skiTot = 0;
+            cashPaid = 0;
+            totalCost = 0;
+            GrandTot = 0;
+            taxAmount.Text = "xx";
+            amoPaid.Text = "xx";
+            Cost.Text = "xx";
+            total.Text = "xx";
+            change.Text = "xx";
+            cashInput.Text = "0";
+                oneCost.Text = $"xx";
+                twoCost.Text = $"xx";
+                threeCost.Text = $"xx";
+                wholeCost.Text = $"xx";
+                skimCost.Text = $"xx";
+                totalCo.Text = $"xx";
+                taxCo.Text = $"xx";
+                subtotCost.Text = $"xx";
+                cashCo.Text = $"xx";
+                changeCost.Text = $"xx";
+                onePerN.Text = $"X 0";
+                twoPerN.Text = $"X 0";
+                threePerN.Text = $"X 0";
+                wholeN.Text = $"X 0";
+                skimN.Text = $"X 0";
+
+            //making receipt invisible
+            whoLab.Visible = false;
+            wholeCost.Visible = false;
+            wholeN.Visible = false;
+
+            oneCost.Visible = false;
+            oneLab.Visible = false;
+            onePerN.Visible = false;
+
+            twoPerN.Visible = false;
+            twoLab.Visible = false;
+            twoCost.Visible = false;
+
+            ThrLab.Visible = false;
+            threeCost.Visible = false;
+            threePerN.Visible = false;
+
+            skimLab.Visible = false;
+            skimCost.Visible = false;
+            skimN.Visible = false;
+
+            changeCost.Visible = false;
+            changeLab.Visible = false;
+
+            cashCost.Visible = false;
+            cashCo.Visible = false;
+
+            totalab.Visible = false;
+            totalCo.Visible = false;
+
+            taxLab.Visible = false;
+            taxCo.Visible = false;
+
+            subtotalLab.Visible = false;
+            subtotCost.Visible = false;
+
+            refreshButton.Visible = false;
+            label2.Visible = false;
+        }
     }
     } 
