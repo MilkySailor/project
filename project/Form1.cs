@@ -295,7 +295,7 @@ namespace project
             //reseting values
             OnePerInput.Text = "0";
             twoPerInput.Text = "0";
-            ThreePerInput.Text = "0";
+            ThreePerInput.Text = "0"; 
             fakeLoserMilkInput.Text = "0";
             wholeMilkInput.Text = "0";
             onePercNum = 0;
