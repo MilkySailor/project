@@ -386,7 +386,7 @@ namespace project
             subtotalLab.Visible = false;
             subtotCost.Visible = false;
 
-            refreshButton.Visible = false;
+            resetButton.Visible = false;
             label2.Visible = false;
         }
     }
