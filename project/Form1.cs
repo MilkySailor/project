@@ -137,11 +137,7 @@ namespace project
             private void refreshButton_Click(object sender, EventArgs e)
             {
                 //full reset of variables
-                OnePerInput.Text = "0";
-                twoPerInput.Text = "0";
-                ThreePerInput.Text = "0";
-                fakeLoserMilkInput.Text = "0";
-                wholeMilkInput.Text = "0";
+               
                 onePercNum = 0;
                 twoPercNum = 0;
                 thrPercNum = 0;
@@ -203,8 +199,8 @@ namespace project
              onePerN.Visible = true;
             }    
 
-            label2.Visible = true;
-            label2.SendToBack();
+            receiptBack.Visible = true;
+            receiptBack.SendToBack();
 
             Refresh();
             Thread.Sleep(500);
@@ -374,8 +370,8 @@ namespace project
             payButton.Visible = true;
 
             resetButton.Visible = false;
-            label2.Visible = false;
-
+            receiptBack.Visible = false;
+            printRe.Visible = false;
         }
     }
     } 

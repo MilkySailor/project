@@ -44,7 +44,7 @@ namespace project
             this.label3 = new System.Windows.Forms.Label();
             this.blank = new System.Windows.Forms.Label();
             this.checkout = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.receiptBack = new System.Windows.Forms.Label();
             this.oneLab = new System.Windows.Forms.Label();
             this.twoLab = new System.Windows.Forms.Label();
             this.ThrLab = new System.Windows.Forms.Label();
@@ -225,15 +225,15 @@ namespace project
             this.checkout.UseVisualStyleBackColor = true;
             this.checkout.Click += new System.EventHandler(this.checkout_Click);
             // 
-            // label2
+            // receiptBack
             // 
-            this.label2.AutoEllipsis = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(194, 70);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(185, 205);
-            this.label2.TabIndex = 18;
-            this.label2.Visible = false;
+            this.receiptBack.AutoEllipsis = true;
+            this.receiptBack.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.receiptBack.Location = new System.Drawing.Point(194, 70);
+            this.receiptBack.Name = "receiptBack";
+            this.receiptBack.Size = new System.Drawing.Size(185, 205);
+            this.receiptBack.TabIndex = 18;
+            this.receiptBack.Visible = false;
             // 
             // oneLab
             // 
@@ -541,7 +541,7 @@ namespace project
             // errorMessage
             // 
             this.errorMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.errorMessage.Location = new System.Drawing.Point(-13, -6);
+            this.errorMessage.Location = new System.Drawing.Point(-11, 1);
             this.errorMessage.Name = "errorMessage";
             this.errorMessage.Size = new System.Drawing.Size(402, 350);
             this.errorMessage.TabIndex = 47;
@@ -763,7 +763,7 @@ namespace project
             this.Controls.Add(this.ThrLab);
             this.Controls.Add(this.twoLab);
             this.Controls.Add(this.oneLab);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.receiptBack);
             this.Controls.Add(this.checkout);
             this.Controls.Add(this.blank);
             this.Controls.Add(this.label3);
@@ -803,7 +803,7 @@ namespace project
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label blank;
         private System.Windows.Forms.Button checkout;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label receiptBack;
         private System.Windows.Forms.Label oneLab;
         private System.Windows.Forms.Label twoLab;
         private System.Windows.Forms.Label ThrLab;
