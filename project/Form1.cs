@@ -150,7 +150,7 @@ namespace project
                 skiTot = 0;
                 cashPaid = 0;
                 totalCost = 0;
-                GrandTot = 0;
+                GrandTot = 0; 
                 taxAmount.Text = "xx";
                 amoPaid.Text = "xx";
                 Cost.Text = "xx";
